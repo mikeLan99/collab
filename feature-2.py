@@ -1,8 +1,8 @@
 #person 2 - added this feature change:
-#we have to sum two integer numbers not float 
+#we have to sum two float numbers only 
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
 sum = num1 + num2
 
