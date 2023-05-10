@@ -1,11 +1,11 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-//  subtraction has to be done  
+// multiplication has to be done 
 
 int main() {
-    int x = 20;
-    int y = 40;
-    cout<<"Subtraction is :"<<x-y<<endl;
+    int x = 10;
+    int y = 20;
+    cout<<"Multiplication is :"<<x*y<<endl;
     return 0;
 }
