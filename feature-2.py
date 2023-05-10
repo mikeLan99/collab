@@ -7,6 +7,8 @@ nums = [1,5,2,3]
 nums.sort()
 print(nums)
 
+#ye line add kari hai thapar wali id se 
+
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
