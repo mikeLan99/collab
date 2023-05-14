@@ -1,17 +1,17 @@
-#person 2 - added this feature change:
-#we have to multiply two float numbers only 
+def _lis(arr, n, max_ref):
+    if n == 1:
+        return 1
+    max_ending_here = 1
+    for i in range(1, n):
+        res = _lis(arr, i, max_ref)
+        if arr[i-1] < arr[n-1] and res + 1 > max_ending_here:
+            max_ending_here = res + 1
+    if max_ref[0] < max_ending_here:
+        max_ref[0] = max_ending_here
+    return max_ending_here
 
-
-#adding sorting code 
-nums = [1,5,2,3]
-nums.sort()
-print(nums)
-
-#ye line add kari hai thapar wali id se 
-
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-
-product = num1 * num2
-
-print(f"The sum of {num1} and {num2} is {product}")
+def lis(arr):
+    n = len(arr)
+    max_ref = [1]
+    _lis(arr, n, max_ref)
+    return max_ref[0]
