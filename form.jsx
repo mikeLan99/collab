@@ -4,6 +4,7 @@ import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 const MyForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,6 +32,17 @@ const MyForm = () => {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+        />
+      </FormGroup>
+
+      <FormGroup>
+        <Label for="phoneNumber">Phone Number</Label>
+        <Input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
         />
       </FormGroup>
 
